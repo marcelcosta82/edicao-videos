@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#222;display:flex;gap:40px;padding:0}
+  .frame{width:1080px;height:1920px;position:relative;overflow:hidden;font-family:'Anton',sans-serif}
+  .big{position:absolute;left:0;right:0;top:120px;text-align:center;font-size:520px;line-height:.9;letter-spacing:-8px;color:#fff;text-transform:uppercase}
+  .ph{position:absolute;left:190px;top:520px;width:700px;height:1000px;border-radius:12px;background:rgba(255,255,255,.12);border:3px dashed rgba(255,255,255,.5);display:flex;align-items:center;justify-content:center;color:#fff;font-family:Arial,sans-serif;font-size:34px;letter-spacing:2px}
+  .q{position:absolute;left:80px;right:80px;bottom:200px;font-family:'Instrument Serif',serif;font-style:italic;font-size:110px;line-height:1.05;color:#fff}
+  .q b{font-family:'Anton',sans-serif;font-style:normal;font-weight:400;color:#FBB414;text-transform:uppercase;letter-spacing:-1px}
+  .tag{position:absolute;left:80px;top:80px;font-family:Arial,sans-serif;font-size:30px;color:#fff;letter-spacing:6px;opacity:.85}
+  /* A: base azul principal */
+  .A{background:#1858FF}
+  /* B: azul elétrico */
+  .B{background:#0A4DFF}
+  /* C: base + laranja elétrico em bloco de grade */
+  .C{background:#1858FF}
+  .C .block{position:absolute;left:0;right:0;bottom:0;height:720px;background:#FF5A1F}
+  .C .q{color:#fff}
+  .C .big{color:#fff}
+  .C .ph{background:rgba(0,31,84,.35)}
+</style></head>
+<body>
+  <section class="frame A" id="A">
+    <div class="tag">VARIAÇÃO A · AZUL PRINCIPAL</div>
+    <div class="big">Marca</div>
+    <div class="ph">[ foto recortada da pessoa ]</div>
+    <div class="q">Como uma marca se faz lembrar em meio a tanta tela? <b>lembrar</b></div>
+  </section>
+  <section class="frame B" id="B">
+    <div class="tag">VARIAÇÃO B · AZUL ELÉTRICO</div>
+    <div class="big">Marca</div>
+    <div class="ph">[ foto recortada da pessoa ]</div>
+    <div class="q">Como uma marca se faz lembrar em meio a tanta tela? <b>lembrar</b></div>
+  </section>
+  <section class="frame C" id="C">
+    <div class="tag">VARIAÇÃO C · AZUL + LARANJA ELÉTRICO</div>
+    <div class="block"></div>
+    <div class="big">Marca</div>
+    <div class="ph">[ foto recortada da pessoa ]</div>
+    <div class="q">Como uma marca se faz lembrar em meio a tanta tela? <b>lembrar</b></div>
+  </section>
+</body></html>
