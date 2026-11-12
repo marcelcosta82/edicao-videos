@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Quadros do gancho</title>
+<style>
+  /* Layout: três quadros lado a lado em desktop, empilhados no celular. */
+  :root {
+    --bg: #eef1f7; --fg: #0b1330; --muted: #4a5576; --card: #ffffff; --line: #d5dbe8;
+    --accent: #1858ff; color-scheme: light;
+    --display: "Anton", Impact, "Arial Narrow", sans-serif;
+    --text: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0b1330; --fg: #eef1f7; --muted: #aab3cc; --card: #142047; --line: #2a3766;
+      --accent: #5d8bff; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0b1330; --fg: #eef1f7; --muted: #aab3cc; --card: #142047; --line: #2a3766;
+    --accent: #5d8bff; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: var(--text); line-height: 1.5;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 32px 48px;
+  }
+  header { max-width: 1200px; margin: 0 auto 28px; }
+  h1 { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: clamp(36px, 6vw, 64px); line-height: 1; margin: 0 0 12px; letter-spacing: -0.5px; text-wrap: balance; }
+  header p { color: var(--muted); max-width: 65ch; margin: 0; }
+  .grid { max-width: 1200px; margin: 0 auto; display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  @media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+  figure { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+  figure img { width: 100%; height: auto; display: block; border-radius: 8px; aspect-ratio: 9 / 16; object-fit: cover; max-width: 100%; }
+  figcaption { min-width: 0; }
+  figcaption strong { display: block; font-size: 15px; letter-spacing: .04em; text-transform: uppercase; }
+  figcaption span { color: var(--muted); font-size: 14px; }
+  .note { max-width: 1200px; margin: 28px auto 0; color: var(--muted); font-size: 14px; }
+  .note strong { color: var(--fg); }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Quadros do gancho</h1>
+    <p>Três variações da primeira cena (0 a 4 segundos), com a mesma composição e cores diferentes. A pessoa ainda é um espaço tracejado; a fonte também é provisória.</p>
+  </header>
+
+  <main class="grid">
+    <figure>
+      <img src="quadros/gancho-A.png" alt="Variação A: fundo azul principal, palavra MARCA gigante ao fundo e pergunta em serifa itálica">
+      <figcaption>
+        <strong>A · Azul principal</strong>
+        <span>Versão mais fiel à identidade da Uninter.</span>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="quadros/gancho-B.png" alt="Variação B: fundo azul elétrico, mesma composição da variação A">
+      <figcaption>
+        <strong>B · Azul elétrico</strong>
+        <span>Mesmo layout, com azul mais saturado. Teste direto do tom elétrico.</span>
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="quadros/gancho-C.png" alt="Variação C: fundo azul principal com bloco laranja elétrico na parte de baixo">
+      <figcaption>
+        <strong>C · Azul + laranja elétrico</strong>
+        <span>Mais ousada. O laranja ocupa o terço de baixo, e o amarelo fica só no destaque.</span>
+      </figcaption>
+    </figure>
+  </main>
+
+  <p class="note"><strong>Próximo passo:</strong> escolher a variação do gancho. Depois, os mesmos testes valem para as cenas de impacto.</p>
+</body>
+</html>
