@@ -33,3 +33,26 @@ Fonte: `marca/paleta-de-azuis.webp` (adotada em 11/11/2026).
 - **Prompts de imagem**: pedir fundo de estúdio liso em azul (`#1858FF` ou o azul dominante do projeto), roupa em tons de azul ou neutros, e no máximo um acessório amarelo.
 - **Logo** (`marca/Logo UNINTER.COM.png`): texto branco e globo amarelo. Usar sobre Azul Principal, Profundo ou Marinho; nunca sobre o Azul Claro (pouco contraste com o branco).
 - **Legibilidade**: texto branco sobre Azul Claro tem pouco contraste. Sobre Azul Claro, usar Azul Marinho no texto.
+
+## Cores de apoio (projeto: branding-comunicacao-digital)
+
+Aprovado em 12/11/2026. Mantém a base da marca e acrescenta acentos com papel definido.
+
+| Papel | Cor | Código | Uso |
+|---|---|---|---|
+| Base (≈70%) | Azul Principal | `#1858FF` | Fundo dominante |
+| Profundidade (≈20%) | Azul Marinho | `#001F54` | Cenas de respiro e contraste |
+| Acento 1 (identidade) | Amarelo Destaque | `#FBB414` | Palavra-chave e assinatura final |
+| Acento 2 (ousadia) | Laranja | a confirmar (tom próximo a `#FF6B35`) | Cena de impacto, ao lado do azul |
+| Acento 3 (uso raro) | Lime | `#D4F53C` | Uma única cena, nunca junto com o amarelo |
+| Texto | Branco | `#FFFFFF` | Sobre azuis médios e escuros |
+
+**Regras**
+- Um acento por quadro. Nunca dois acentos juntos.
+- O azul sempre aparece como base, mesmo nas cenas de acento.
+- Degradê do Azul Marinho ao Amarelo pode ser usado em transições.
+
+**Em teste (ainda não aprovado)**
+- Azul elétrico (variação mais saturada do Azul Principal, ex.: `#0A4DFF`), em momentos de impacto.
+- Laranja elétrico (ex.: `#FF5A1F`), para comparar com o laranja base.
+- Os hex finais serão definidos nos quadros-chave.
